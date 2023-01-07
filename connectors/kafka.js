@@ -63,6 +63,7 @@ const startKafkaConsumer = async () => {
         // call the processor
         await processMessage(parsedMessage);
       } catch (e) {
+        console.log(e)
         console.log('Unable to process message');
       }
     },
